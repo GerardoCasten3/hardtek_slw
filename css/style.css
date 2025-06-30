@@ -187,13 +187,16 @@ body {
 .hero__shape {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: url('https://via.placeholder.com/800x600') no-repeat center right;
-    background-size: contain;
+    right: 0;;
     z-index: 1;
-    opacity: 0.7;
+    align-items: center;
+}
+
+.logo__hero{
+    height: 600px;
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 /* Trusted By Section */
@@ -630,5 +633,339 @@ body {
     
     .logos-container {
         justify-content: center;
+    }
+}
+
+/* Thank You Page Styles */
+.thank-you-page {
+    padding: 120px 0;
+    background-color: var(--bg-dark);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.thank-you-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-icon {
+    font-size: 80px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thank-you-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.thank-you-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+}
+
+.thank-you-contact {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.thank-you-contact-info {
+    margin-bottom: 40px;
+}
+
+.thank-you-contact-info p {
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+.thank-you-contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.thank-you-contact-info a {
+    color: #b0b0b0;
+    transition: var(--transition);
+}
+
+.thank-you-contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.thank-you-actions {
+    margin-top: 20px;
+}
+
+/* Responsive styles for thank you page */
+@media(max-width: 768px) {
+    .thank-you-content {
+        padding: 40px 20px;
+    }
+    
+    .thank-you-title {
+        font-size: 2rem;
+    }
+}
+
+.privacy-policy {
+    padding: 100px 0;
+    background-color: var(--bg-dark);
+}
+
+.privacy-policy .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.privacy-policy .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.last-update {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.privacy-section {
+    margin-bottom: 30px;
+}
+
+.privacy-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.privacy-subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.privacy-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.privacy-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.privacy-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Contact Page Styles */
+.contact-page {
+    padding: 100px 0;
+    background-color: var(--bg-dark);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(77, 198, 220, 0.15), rgba(5, 83, 177, 0.15));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.info-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.info-content p, .info-content a {
+    color: #b0b0b0;
+    transition: var(--transition);
+}
+
+.info-content a:hover {
+    color: var(--primary-color);
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--text-light);
+    font-family: 'Work Sans', sans-serif;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(77, 198, 220, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.privacy-consent {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.privacy-consent input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.privacy-consent label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+.privacy-consent a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.form-submit {
+    grid-column: span 2;
+    margin-top: 10px;
+}
+
+/* Responsive styles for contact page */
+@media(max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .full-width {
+        grid-column: span 1;
+    }
+    
+    .form-submit {
+        grid-column: span 1;
+    }
+}
+@media(max-width: 768px) {
+    .privacy-content {
+        padding: 30px 20px;
+    }
+    
+    .privacy-policy .section-title {
+        font-size: 2rem;
     }
 }
