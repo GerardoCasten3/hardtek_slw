@@ -51,12 +51,10 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Clase para ocultar la navbar */
 .header--hidden {
     transform: translateY(-100%);
 }
 
-/* Clase para mostrar la navbar con efecto */
 .header--visible {
     transform: translateY(0);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -187,7 +185,7 @@ body {
 .hero__shape {
     position: absolute;
     top: 0;
-    right: 0;;
+    right: 0;
     z-index: 1;
     align-items: center;
 }
@@ -209,8 +207,7 @@ body {
     text-align: center;
     font-size: 1rem;
     color: #b0b0b0;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -548,94 +545,6 @@ body {
     transition: var(--transition);
 }
 
-/* Responsive Styles */
-@media(max-width: 1024px) {
-    .hero{
-
-    }
-
-    .hero__title {
-        font-size: 3rem;
-    }
-    
-    .hero__shape {
-        width: 45%;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .footer-links {
-        justify-content: flex-start;
-        gap: 40px;
-    }
-}
-
-@media(max-width: 768px) {
-    .hero {
-        padding: 80px 0 60px;
-    }
-    
-    .hero__title {
-        font-size: 2.5rem;
-    }
-    
-    .hero__shape {
-        display: none;
-    }
-    
-    .hero__content {
-        max-width: 100%;
-        text-align: center;
-    }
-    
-    .hero__cta {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .services-grid,
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-}
-
-@media(max-width: 650px){
-    .header__content{
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-        row-gap: 18px;
-    }
-    .nav__list{
-        column-gap: 20px;
-    }
-    body {
-        padding-top: 120px;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .logos-container {
-        justify-content: center;
-    }
-}
-
 /* Thank You Page Styles */
 .thank-you-page {
     padding: 120px 0;
@@ -722,30 +631,10 @@ body {
     margin-top: 20px;
 }
 
-/* Responsive styles for thank you page */
-@media(max-width: 768px) {
-    .thank-you-content {
-        padding: 40px 20px;
-    }
-    
-    .thank-you-title {
-        font-size: 2rem;
-    }
-}
-
+/* Privacy Policy Styles */
 .privacy-policy {
     padding: 100px 0;
     background-color: var(--bg-dark);
-}
-
-.privacy-policy .section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.privacy-policy .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
 .last-update {
@@ -818,7 +707,6 @@ body {
     margin-top: 50px;
 }
 
-/* Contact Info Styles */
 .contact-info {
     background: var(--card-bg);
     border-radius: 15px;
@@ -860,7 +748,6 @@ body {
     color: var(--primary-color);
 }
 
-/* Contact Form Styles */
 .contact-form-container {
     background: var(--card-bg);
     border-radius: 15px;
@@ -940,32 +827,186 @@ body {
     margin-top: 10px;
 }
 
-/* Responsive styles for contact page */
-@media(max-width: 992px) {
-    .contact-container {
-        grid-template-columns: 1fr;
+/* ===============================================
+   MEDIA QUERIES - RESPONSIVIDAD ESENCIAL
+   =============================================== */
+
+/* Tablet Landscape - 1024px */
+@media(max-width: 1024px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+    
+    .hero__shape {
+        width: 45%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-links {
+        justify-content: flex-start;
+        gap: 40px;
     }
 }
 
+/* Tablet Portrait - 768px */
 @media(max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Hero adjustments */
+    .hero {
+        padding: 80px 0 60px;
+    }
+    
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    
+    .hero__shape {
+        display: none;
+    }
+    
+    .hero__content {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .hero__cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* Grid layouts to single column */
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact page */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
     .contact-form {
         grid-template-columns: 1fr;
     }
     
-    .full-width {
-        grid-column: span 1;
-    }
-    
+    .full-width,
     .form-submit {
         grid-column: span 1;
     }
-}
-@media(max-width: 768px) {
+    
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* Titles */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    /* Thank you and privacy pages */
+    .thank-you-content,
     .privacy-content {
         padding: 30px 20px;
     }
     
-    .privacy-policy .section-title {
+    .thank-you-title {
         font-size: 2rem;
+    }
+    
+    .thank-you-icon {
+        font-size: 60px;
+    }
+}
+
+/* Mobile - 650px */
+@media(max-width: 650px) {
+    body {
+        padding-top: 120px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header becomes vertical on small screens */
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        row-gap: 18px;
+    }
+    
+    .nav__list {
+        column-gap: 20px;
+    }
+    
+    /* Reduce font sizes */
+    .hero__title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .service-card,
+    .contact-info,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+    
+    .info-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Mobile - 480px */
+@media(max-width: 480px) {
+    .footer-logo-img {
+        height: 60px;
+    }
+    
+    .footer-tagline {
+        font-size: 0.9rem;
+    }
+    
+    .footer-heading {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-list li {
+        margin-bottom: 8px;
+    }
+    
+    .hero__title {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
