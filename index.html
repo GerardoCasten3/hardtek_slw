@@ -23,12 +23,15 @@
     <header class="header" id="header">
       <div class="header__content">
         <a href="#" class="header__logo">
-          <img class="logo__img" src="img/logo_pag.png" alt="Logo" />
+          <img class="logo__img" src="img/logo_new.png" alt="Logo Hardtek" />
         </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Inicio</a>
+            </li>
+                        <li class="nav__item">
+              <a href="#about" class="nav__link">Nosotros</a>
             </li>
             <li class="nav__item">
               <a href="#services" class="nav__link">Soluciones</a>
@@ -44,33 +47,58 @@
     <main>
       <!-- Hero Section -->
       <section class="hero">
-        <div class="container">
+        <div class="hero__background"></div>
+        <div class="container hero__container">
           <div class="hero__content">
-            <h1 class="hero__title">
-              Desarrollamos <span class="highlight">soluciones</span> digitales
-              para tu negocio
-            </h1>
-            <p class="hero__description">
-              Descubre cómo nuestras soluciones tecnológicas pueden
-              impulsar tu negocio. Ofrecemos diseño web personalizado y
-              estrategias digitales que transforman tu presencia online.
-            </p>
-            <div class="hero__cta">
-              <a href="#" class="btn btn-primary">Conoce más</a>
+            <div class="hero__text">
+              <span class="hero__label">Bienvenido a la nueva era</span>
+              <h1 class="hero__title">
+                Transformamos tu visión en <span class="highlight">soluciones digitales</span>
+              </h1>
+              <p class="hero__description">
+                Especializados en desarrollo web, software personalizado y servicios tecnológicos que impulsan el crecimiento de tu negocio.
+              </p>
+              <div class="hero__cta">
+                <a href="#contact" class="btn btn-primary">Comencemos tu proyecto</a>
+                <a href="#services" class="btn btn-outline">Ver soluciones</a>
+              </div>
+            </div>
+            <div class="hero__visual">
+              <img src="img/banner.png" alt="Soluciones Hardtek" class="hero__image" />
             </div>
           </div>
         </div>
-        <div class="hero__shape">
-          <img class="logo__hero" src="img/logo_hero.png" alt="picture" />
-        </div>
       </section>
 
-      <!-- Trusted By Section -->
-      <section class="trusted-by">
+      <!-- About Section -->
+      <section class="about" id="about">
         <div class="container">
-          <h3 class="section-subtitle">
-            Permítenos evolucionar tu empresa hacia la era digital
-          </h3>
+          <div class="about__content">
+            <div class="about__image">
+              <img src="img/we_are_new.png" alt="Quiénes somos" class="about__img" />
+            </div>
+            <div class="about__text">
+              <span class="section-label">Quiénes Somos</span>
+              <h2 class="about__title">Tu aliado en la transformación digital</h2>
+              <p class="about__description">
+                En Hardtek combinamos innovación, experiencia y pasión por la tecnología. Ayudamos a empresas de todos los tamaños a alcanzar sus objetivos digitales.
+              </p>
+              <ul class="about__highlights">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Soluciones personalizadas según tus necesidades</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Equipo experto disponible para ti</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Soporte técnico continuo y confiable</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -155,8 +183,7 @@
               </div>
               <h3 class="service-title">Optimización SEO</h3>
               <p class="service-description">
-                Mejoramos tu visibilidad en buscadores para atraer tráfico
-                cualificado a tu sitio web.
+                Incrementa tus ventas y visibilidad en línea con estrategias SEO efectivas.
               </p>
               <a href="#" class="service-link"
                 >Saber más <i class="fas fa-arrow-right"></i
@@ -177,66 +204,6 @@
                 >Saber más <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Portfolio Section -->
-      <section class="portfolio" id="portfolio">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">
-            Últimos Proyectos</span>
-            </h2>
-            <p class="section-description">
-              Explora algunos de nuestros proyectos recientes y descubre cómo
-              hemos ayudado a otras empresas a alcanzar sus objetivos digitales.
-            </p>
-          </div>
-
-          <div class="portfolio-grid">
-            <!-- Portfolio Item 1 -->
-            <div class="portfolio-item">
-              <div class="portfolio-image">
-                <img
-                  src="img/portfolio1.jpg"
-                  alt="Proyecto 1"
-                />
-                <div class="portfolio-overlay">
-                  <a href="#" class="portfolio-link">Solicitar info</a>
-                </div>
-              </div>
-              <h3 class="portfolio-title">Gestor de Proyectos</h3>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="portfolio-item">
-              <div class="portfolio-image">
-                <img
-                  src="img/portfolio2.png"
-                  alt="Proyecto 2"
-                />
-                <div class="portfolio-overlay">
-                  <a href="#" class="portfolio-link">Solicitar info</a>
-                </div>
-              </div>
-              <h3 class="portfolio-title">Chatbot de Servicio al Cliente</h3>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="portfolio-item">
-              <div class="portfolio-image">
-                <img
-                  src="img/portfolio3.png"
-                  alt="Proyecto 3"
-                />
-                <div class="portfolio-overlay">
-                  <a href="#" class="portfolio-link">Solicitar info</a>
-                </div>
-              </div>
-              <h3 class="portfolio-title">Simulador de Exámenes Online</h3>
-            </div>
-
           </div>
         </div>
       </section>
@@ -262,10 +229,9 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <img src="img/logo_pag.png" alt="Logo" class="footer-logo-img" />
+            <img src="img/logo_new.png" alt="Logo Hardtek" class="footer-logo-img" />
             <p class="footer-tagline">
-              Brindamos servicios de tecnología <strong>accesibles</strong> para
-              todo el mundo.
+              Tecnología accesible para transformar tu negocio en la era digital.
             </p>
           </div>
 
@@ -274,9 +240,9 @@
               <h3 class="footer-heading">Servicios</h3>
               <ul class="footer-list">
                 <li><a href="#services">Desarrollo Web</a></li>
-                <li><a href="#services">SEO</a></li>
-                <li><a href="#services">Sistemas a tu medida</a></li>
-                <li><a href="#services">Servicios de hardware</a></li>
+                <li><a href="#services">Software Personalizado</a></li>
+                <li><a href="#services">Servicios de Hardware</a></li>
+                <li><a href="#services">Soporte Técnico</a></li>
               </ul>
             </div>
 
@@ -284,18 +250,16 @@
               <h3 class="footer-heading">Contacto</h3>
               <ul class="footer-list contact-list">
                 <li>
-                  <i class="fas fa-map-marker-alt"></i> Saltillo, Coahuila,
-                  México
+                  <i class="fas fa-map-marker-alt"></i> Saltillo, Coahuila, México
                 </li>
-                <li><i class="fas fa-phone"></i> (+52) 56 1236 4727</li>
+                <li><i class="fas fa-phone"></i> (+52) 844 220 6208</li>
                 <li>
                   <i class="fas fa-envelope"></i> hardtek.soluciones@hotmail.com
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/hardtek.slw"
-                    ><i class="fab fa-facebook"></i>
-                    https://www.facebook.com/hardtek.slw</a
-                  >
+                  <a href="https://www.facebook.com/hardtek.slw" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                  </a>
                 </li>
               </ul>
             </div>
@@ -304,7 +268,7 @@
 
         <div class="footer-bottom">
           <p class="copyright">
-            Hardtek™
+            © 2026 Hardtek. Todos los derechos reservados.
           </p>
           <div class="footer-legal">
             <a href="privacy.html">Política de privacidad</a>
