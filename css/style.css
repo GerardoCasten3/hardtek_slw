@@ -142,7 +142,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 80px 0 100px;
+    padding: 80px 0 80px;
     overflow: hidden;
     background-color: var(--bg-dark);
 }
@@ -736,7 +736,7 @@ body {
 
 /* Contact Page Styles */
 .contact-page {
-    padding: 15px 0;
+    padding: 40px 0;
     background-color: var(--bg-dark);
 }
 
@@ -744,6 +744,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .contact-info {
@@ -751,7 +752,6 @@ body {
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    margin: 10px;
 }
 
 .info-item {
@@ -1004,10 +1004,6 @@ body {
         padding-top: 100px;
     }
     
-    .container {
-        padding: 0 15px;
-    }
-    
     /* Header becomes vertical on small screens */
     .header__content {
         flex-direction: column;
@@ -1119,5 +1115,38 @@ body {
     .btn {
         padding: 10px 20px;
         font-size: 14px;
+    }
+
+    .contact-info{
+        margin: 10px 0;
+    }
+
+    .about{
+    padding: 60px 0;
+    }
+
+    .services-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .service-card{
+    padding: 20px 15px;
+    }
+
+    .hero{
+    padding: 100px 0 100px;
+    margin: 0;
+    }
+
+    .about__img{
+        max-width: 240px;
+    }
+
+    .about__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
     }
 }
